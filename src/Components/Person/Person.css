@@ -1,0 +1,32 @@
+.full-detail {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 120px;
+    border-radius: 15px;
+}
+
+.text-info p {
+    font-size: 15px;
+}
+
+button.btn-info {
+    width: 100%;
+    background-color: #46b2ff;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 12px 10px;
+    display: block;
+    font-size: 18px;
+}
+
+
+
+button.btn-info:hover {
+    background-color: green;
+}

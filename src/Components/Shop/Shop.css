@@ -1,4 +1,21 @@
 .main-container {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
+}
+.person-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.details-container {
+    background-color: #dbdbdb;
+    padding: 30px 100px;
+}
+.details-container h2 {
+    color: #4343ff;
+}
+
+.display-container{
+    padding: 15px;
 }
