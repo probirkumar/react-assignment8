@@ -17,9 +17,12 @@ const Shop = () => {
     // console.log(setDetails['data'])
 
 
-    const handleAddToList = (detail) => {
+    const handleAddToList = (selectedDetail) => {
+        const addedTime = details.time;
+        // console.log(addedTime)
 
-        setUpdates(detail);
+        
+        setUpdates(selectedDetail);
 
         // console.log(initTime)
         // setDetails(detail.time);
@@ -27,7 +30,10 @@ const Shop = () => {
 
     }
 
-    console.log(updates)
+
+    // const breakTimeHandler = (updates) =>{
+    //     console.log('clicked', updates)
+    // }
 
     return (
         <div className='main-container'>
@@ -45,7 +51,9 @@ const Shop = () => {
                 </div>
             </div>
             <div className='display-container'>
-                <Update updates={updates}></Update>
+                <Update updates={updates}
+                // breakTimeHandler = {breakTimeHandler}
+                ></Update>
             </div>
         </div>
     );

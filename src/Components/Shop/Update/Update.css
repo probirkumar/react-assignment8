@@ -31,6 +31,9 @@
 
 .breack-time-wrapper li {
     list-style: none;
+    background-color: white;
+    padding: 7px;
+    border-radius: 20px;
 }
 
 .time-wrapper {

@@ -3,7 +3,15 @@ import './Update.css'
 import image from '../../../images/profile.jpg';
 
 const Update = (props) => {
-    console.log(props.updates.time)
+    // const {breakTimeHandler} = props.updates;
+    // console.log(breakTimeHandler)
+
+    // console.log(props.updates)
+    const breakTimeHandler = (time) =>{
+        const innerTexts = document.querySelectorAll('.active').innerHTML;
+        console.log(innerTexts, time)
+    }
+
     return (
         <div className='profile-container'>
             <div className="profile">
@@ -16,11 +24,11 @@ const Update = (props) => {
             <div className="time-breack">
                 <h3>Add A Breack</h3>
                 <div className="breack-time-wrapper">
-                    <li className='active'>10s</li>
-                    <li>30s</li>
-                    <li>20s</li>
-                    <li>40s</li>
-                    <li>50s</li>
+                    <li onClick={() =>breakTimeHandler()} className='active'>10s</li>
+                    <li onClick={() =>breakTimeHandler()} className='active'>30s</li>
+                    <li onClick={() =>breakTimeHandler()} className='active'>20s</li>
+                    <li onClick={() =>breakTimeHandler()} className='active'>40s</li>
+                    <li onClick={() =>breakTimeHandler()} className='active'>50s</li>
                 </div>
             </div>
             <div className="exercise-details">
@@ -28,7 +36,7 @@ const Update = (props) => {
                 <div className='time-wrapper'>
                     <div className='exercise-time'>
                         <h5>Exercise Time: </h5>
-                        <p><span>0</span> Seconds</p>
+                        <p><span>{props.updates.time}</span> Seconds</p>
                     </div>
                 </div>
                 <div className='time-wrapper'>
